@@ -1,0 +1,497 @@
+.name {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+    height: 50px;
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    font-family: DIN_Regular;
+}
+
+.aka {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: DIN_Light;
+}
+
+.age {
+    position: relative;
+    top: 200px;
+    width: 100px;
+    height: 100px;
+    color: white;
+    font-size: 20px;
+    padding: 20px;
+    text-align: center;
+    font-family: DIn_Light;
+    border-color: mediumpurple;
+    border-style: solid;
+    border-radius: 100px;
+}
+
+.info {
+    position: relative;
+    top: 60%;
+    width: 100%;
+    height: auto;
+    color: white;
+    text-align: center;
+    font-size: 15px;
+    font-family: DIN_Light;
+}
+
+
+
+
+
+
+.portfolio {
+    margin: auto;
+    width: 50%;
+    height: 80%;
+    background-color: transparent;
+    display: grid;
+}
+.portfolio-1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 33.33%;
+    background-color: transparent;
+    display: flex;
+}
+.portfolio-2 {
+    position: relative;
+    top: 33.33;
+    left: 17.5%;
+    width: 65%;
+    height: 33.33%;
+    background-color: transparent;
+    display: flex;
+}
+.portfolio-3 {
+    position: relative;
+    top: 66.66;
+    left: 0;
+    width: 100%;
+    height: 33.33%;
+    background-color: transparent;
+    display: flex;
+}
+.portfolio-1-1 {
+    flex: 3;
+    background-color: orange;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 0.5s;
+}
+.portfolio-1-1:hover {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    transition: 0.5s;
+}
+.portfolio-1-2 {
+    flex: 3;
+    background-color: yellow;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 0.5s;
+}
+.portfolio-1-2:hover {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    transition: 0.5s;
+}
+.portfolio-1-3 {
+    flex: 3;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 0.5s;
+}
+.portfolio-1-3:hover {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    transition: 0.5s;
+}
+.portfolio-1-4 {
+    flex: 2;
+    background-color: orange;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 0.5s;
+}
+.portfolio-1-4:hover {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    transition: 0.5s;
+}
+.portfolio-1-5 {
+    flex: 2;
+    background-color: yellow;
+    margin-left: 15px;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 0.5s;
+}
+.portfolio-1-5:hover {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    transition: 0.5s;
+}
+.portfolio-1-6 {
+    flex: 3;
+    background-color: red;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 0.5s;
+}
+.portfolio-1-6:hover {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    transition: 0.5s;
+}
+.portfolio-1-7 {
+    flex: 3;
+    background-color: orange;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 0.5s;
+}
+.portfolio-1-7:hover {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    transition: 0.5s;
+}
+.portfolio-1-8 {
+    flex: 3;
+    background-color: yellow;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 0.5s;
+}
+.portfolio-1-8:hover {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    transition: 0.5s;
+}
+.rhombus {
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transition: 0.5s;
+}
+
+
+
+.skills {
+    margin: auto;
+    width: 90%;
+    height: 80%;
+    background-color: transparent;
+    display: grid;
+    color: white
+}
+
+.skills-1 {
+    position: relative;
+    left: 0;
+    top: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+.skills-2 {
+    position: relative;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    height: 50%;
+    display: flex;
+}
+
+.skill-1 {
+    flex: 1;
+    background-color: transparent;
+}
+.skill-2 {
+    flex: 1;
+    background-color: transparent;
+}
+.skill-3 {
+    flex: 1;
+    background-color: transparent;
+}
+.skill-4 {
+    flex: 1;
+    background-color: transparent;
+}
+.skill-5 {
+    flex: 1;
+    background-color: transparent;
+}
+.skill-6 {
+    flex: 1;
+    background-color: transparent;
+}
+.skill-image {
+    position: relative;
+    top: 50px;
+    width: 128px;
+    height: 128px;
+    transition: 0.5s;
+}
+
+/* custom class to toggle hover blur */
+.skill-image-hover {
+    transition: 0.5s;
+    filter: blur(20px);
+}
+
+.skill-name {
+    position: relative;
+    top: 100px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: transparent;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+.skill-data {
+    position: relative;
+    top: 130px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: transparent;
+}
+.skill-divider {
+    position: relative;
+    top: 115px;
+    width: 30px;
+    height: 3px;
+    opacity: 1.0;
+    background-color: white;
+}
+
+
+
+
+.achivements {
+    position: relative;
+    margin: auto;
+    width: 70%;
+    height: 70%;
+    opacity: 1.0;
+    background-color: transparent;
+    display: grid;
+}
+
+.achievement-1 {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    background-color: transparent;
+}
+
+.achievement-2 {
+    position: relative;
+    width: 100%;
+    height: 50%;
+    left: 0;
+    background-color: transparent;
+}
+
+.achievement-title-right {
+    position: relative;
+    width: 70%;
+    height: auto;
+    left: 30%;
+    top: -80%;
+    text-align: center;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Avenir;
+    color: white;
+}
+.achievement-title-left {
+    position: relative;
+    width: 70%;
+    height: auto;
+    left: 0%;
+    top: -80%;
+    text-align: center;
+    background-color: transparent;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-family: Avenir;
+    color: white;
+}
+.achievement-divider-right {
+    position: relative;
+    left: 62.5%;
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    top: -77.5%;
+}
+.achievement-divider-left {
+    position: relative;
+    left: 32.5%;
+    width: 50px;
+    height: 5px;
+    background-color: white;
+    top: -77.5%;
+}
+.achievement-image-left {
+    position: relative;
+    left: 0;
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url(../assets/achievements/wwdc16-og.jpg);
+    background-size: contain;
+    transition: 0.5s;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.achievement-image-right {
+    position: relative;
+    left: 70%;
+    width: 30%;
+    height: 100%;
+    background-color: transparent;
+    background-image: url(../assets/achievements/wwdc17-og.jpg);
+    background-size: cover;
+    transition: 0.5s;
+    -webkit-clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+.achievement-image-left:hover {
+    padding: 10px 10px 10px 10px;
+    transition: 0.5s;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+.achievement-image-right:hover {
+    padding: 10px 10px 10px 10px;
+    transition: 0.5s;
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+}
+
+.achievement-info-right {
+    position: relative;
+    left: 40%;
+    top: -75%;
+    width: 50%;
+    height: auto;
+    background-color: transparent;
+    text-align: justify; 
+    color: white;
+}
+.achievement-info-left {
+    position: relative;
+    left: 10%;
+    top: -75%;
+    width: 50%;
+    height: auto;
+    text-align: justify;
+    background-color: transparent;
+    color: white;
+}
+
+.achievement-app-submission-left {
+    position: relative;
+    left: 40%;
+    top: -60%;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    text-align: justify;
+    color: white;
+}
+.achievement-app-submission-right {
+    position: relative;
+    left: 10%;
+    top: -60%;
+    width: auto;
+    height: auto;
+    background-color: transparent;
+    text-align: justify;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.contact-details {
+    margin: auto;
+    width: 80%;
+    height: 60%;
+    background-color: transparent;
+    display: flex;
+}
+
+.contact-1 {
+    flex: 3;
+    background-color: transparent;
+}
+
+.contact-2 {
+    flex: 3;
+    background-color: transparent;
+}
+
+.contact-3 {
+    flex: 3;
+    background-color: transparent;
+}
+.contact-image {
+    position: relative;
+    width: 30%;
+    top: 100px;
+}
+.contact-type {
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+    text-align: center;
+    top: 200px;
+    font-size: 20px;
+    color: white;
+    font-family: Avenir;
+}
+
+
+
+
+
+
+
+
+
+
+
+

@@ -162,9 +162,33 @@
         <header id="top" class="main-hero">
             <div class="main-hero-text">
                 <div class="content">
-                    <div class="text-loading-mask">
-                        <div class="text-loading-overlay is-reveal"></div>
-                        <h1 itemprop="author" class="main-hero-title">Ayush Aggarwal</h1>
+                    <div>
+                        <div class="text-loading-mask">
+                            <div class="text-loading-overlay is-reveal"></div>
+                            <h1 itemprop="author" class="main-hero-title">Ayush Aggarwal</h1>
+                            <div class="main-hero-title-cover"></div>
+                            <style>
+                                .main-hero-title-cover {
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 90px;
+                                    background-color: white;
+                                    transition: 1s;
+                                }
+                            </style>
+                            <script>
+                                var obj = document.getElementsByClassName('main-hero-title')[0], cover = document.getElementsByClassName('main-hero-title-cover')[0];
+                                window.onload = function() {
+                                    window.setTimeout(function() {
+                                        cover.style.width = '0';
+                                    }, 1000);
+                                    console.log('view has been loaded');
+                                }
+                                
+                            </script>
+                        </div>
                     </div>
                     <div>
                         <div class="text-loading-mask">
@@ -299,7 +323,6 @@
                     </g>
                 </svg>
 -->
-                
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="Capa_1" x="0px" y="0px" width="256px" height="256px" viewBox="0 0 522.468 522.469" style="enable-background:new 0 0 522.468 522.469;" xml:space="preserve">
                     <style>
                         .st0 {
@@ -331,7 +354,6 @@
                 <span itemprop="name" class="visual-hide">Ayush Aggarwal</span>
                 <link itemprop="url" href="http://highestage.github.io/">
                 <link itemprop="logo" href="http://highestage.github.io/icons/logo.svg">
-<!--
                 <li>
                     <a href="https://twitter.com/highestage" target="_blank" rel="noopener" itemprop="sameAs">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 612 612">
@@ -339,8 +361,6 @@
                         </svg>
                     </a>
                 </li>
--->
-<!--
                 <li>
                     <a href="https://it.linkedin.com/in/highestage" target="_blank" rel="noopener" itemprop="sameAs">
                         <svg xmlns="http://www.w3.org/2000/svg" width="430.117" height="430.117" viewBox="0 0 430.117 430.117">
@@ -348,8 +368,6 @@
                         </svg>
                     </a>
                 </li>
--->
-<!--
                 <li>
                     <a href="https://github.com/highestage" target="_blank" rel="noopener" itemprop="sameAs">
                         <svg xmlns="http://www.w3.org/2000/svg" width="438.549" height="438.549" viewBox="0 0 438.549 438.549">
@@ -357,7 +375,6 @@
                         </svg>
                     </a>
                 </li>
--->
 <!--
                 <li>
                     <a href="http://codepen.io/highestage" target="_blank" rel="noopener" itemprop="sameAs">
@@ -454,7 +471,7 @@
                     <ul class="case-studies-list">
                         
                         <li>
-                            <a href="http://highestage.github.io/" id="cerasa" style="background-image: url(&#39;img/cerasa-work.jpg&#39;);" data-destination="cerasa" itemprop="url" class="case-study is-hidden">
+                            <a href="http://highestage.github.io/internal-sites/limelight/index.html" id="cerasa" style="background-image: url(&#39;img/cerasa-work.jpg&#39;);" data-destination="cerasa" itemprop="url" class="case-study is-hidden">
                                 <div class="case-study-mask"></div>
                                 <div class="case-study-reveal-mask"></div>
                                 <div class="case-study-mask-number">
@@ -473,7 +490,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://highestage.github.io/" id="lato" style="background-image: url(&#39;img/lato-admin.png&#39;);" data-destination="lato" itemprop="url" class="case-study is-hidden">
+                            <a href="http://highestage.github.io/internal-sites/constant/index.html" id="lato" style="background-image: url(&#39;img/lato-admin.png&#39;);" data-destination="lato" itemprop="url" class="case-study is-hidden">
                                 <div class="case-study-mask"></div>
                                 <div class="case-study-reveal-mask"></div>
                                 <div class="case-study-mask-number">
@@ -483,7 +500,7 @@
                                     </div>
                                 </div>
                                 <div class="case-study-text-section">
-                                    <h3 itemprop="name" class="h2 case-study-title">CONSTANT:A Fast Paced Game</h3>
+                                    <h3 itemprop="name" class="h2 case-study-title">CONSTANT</h3>
                                     <h5 itemprop="description" class="case-study-subtitle">A VR based game which can sync with your music.</h5>
                                     <button class="the-button call-to-button"><span class="button-text">Case Study</span>
                                         <div class="button-mask"></div><span class="button-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213"><path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path></svg></span>
@@ -492,7 +509,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://highestage.github.io/" id="la-francesca" style="background-image: url(&#39;img/la-francesca-work.jpg&#39;);" data-destination="la-francesca" itemprop="url" class="case-study is-hidden">
+                            <a href="http://highestage.github.io/internal-sites/venturix/index.html" id="la-francesca" style="background-image: url(&#39;img/la-francesca-work.jpg&#39;);" data-destination="la-francesca" itemprop="url" class="case-study is-hidden">
                                 <div class="case-study-mask"></div>
                                 <div class="case-study-reveal-mask"></div>
                                 <div class="case-study-mask-number">
@@ -511,7 +528,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="http://highestage.github.io/" id="sportland" style="background-image: url(&#39;img/sportland-work.jpg&#39;);" data-destination="sportland" itemprop="url" class="case-study is-hidden">
+                            <a href="http://highestage.github.io/internal-sites/falkon/index.html" id="sportland" style="background-image: url(&#39;img/sportland-work.jpg&#39;);" data-destination="sportland" itemprop="url" class="case-study is-hidden">
                                 <div class="case-study-mask"></div>
                                 <div class="case-study-reveal-mask"></div>
                                 <div class="case-study-mask-number">
@@ -540,7 +557,7 @@
                     </div>
                     <ul class="case-studies-list">
                         <li>
-                            <a href="http://highestage.github.io/" id="la-francesca" style="background-image: url(&#39;img/la-francesca-work.jpg&#39;);" data-destination="la-francesca" itemprop="url" class="case-study is-hidden">
+                            <a href="http://highestage.github.io/internal-sites/WWDC_2017/index.html" id="la-francesca" style="background-image: url(&#39;img/la-francesca-work.jpg&#39;);" data-destination="la-francesca" itemprop="url" class="case-study is-hidden">
                                 <div class="case-study-mask"></div>
                                 <div class="case-study-reveal-mask"></div>
                                 <div class="case-study-mask-number">
@@ -568,13 +585,13 @@
                     </div>
                     <ul class="case-studies-list">
                         <li>
-                            <a href="http://highestage.github.io/" id="sportland" style="background-image: url(&#39;img/sportland-work.jpg&#39;);" data-destination="sportland" itemprop="url" class="case-study is-hidden">
+                            <a href="http://highestage.github.io/internal-sites/WWDC_2016/index.html" id="sportland" style="background-image: url(&#39;img/sportland-work.jpg&#39;);" data-destination="sportland" itemprop="url" class="case-study is-hidden">
                                 <div class="case-study-mask"></div>
                                 <div class="case-study-reveal-mask"></div>
                                 <div class="case-study-mask-number">
-                                    <div class="case-study-mask-back">04</div>
+                                    <div class="case-study-mask-back">02</div>
                                     <div class="case-study-mask-front">
-                                        <div data-index="04" class="case-study-mask-overlay">04</div>
+                                        <div data-index="04" class="case-study-mask-overlay">02</div>
                                     </div>
                                 </div>
                                 <div class="case-study-text-section">
@@ -597,13 +614,13 @@
                     </div>
                     <ul class="case-studies-list">
                         <li>
-                            <a href="http://highestage.github.io/" id="sportland" style="background-image: url(&#39;img/sportland-work.jpg&#39;);" data-destination="sportland" itemprop="url" class="case-study is-hidden">
+                            <a href="http://highestage.github.io/internal-sites/ms_dev_event/index.html" id="sportland" style="background-image: url(&#39;img/sportland-work.jpg&#39;);" data-destination="sportland" itemprop="url" class="case-study is-hidden">
                                 <div class="case-study-mask"></div>
                                 <div class="case-study-reveal-mask"></div>
                                 <div class="case-study-mask-number">
-                                    <div class="case-study-mask-back">04</div>
+                                    <div class="case-study-mask-back">01</div>
                                     <div class="case-study-mask-front">
-                                        <div data-index="04" class="case-study-mask-overlay">04</div>
+                                        <div data-index="04" class="case-study-mask-overlay">01</div>
                                     </div>
                                 </div>
                                 <div class="case-study-text-section">
@@ -650,7 +667,7 @@
                             </div>
                             <div class="experiment-title-area">
                                 <div class="experiment-title-label">Aureole</div>
-                                <div class="experiment-title">A 2D game developed in WebGL for iOS and Android</div>
+                                <div class="experiment-title">A 2D game developed in WebGL for iOS and<br>Android</div>
                             </div>
                             <div class="experiment-number-area">&nbsp;</div>
                         </a>
@@ -663,7 +680,7 @@
                             </div>
                             <div class="experiment-title-area">
                                 <div class="experiment-title-label">Protastic</div>
-                                <div class="experiment-title">An app that tracks your steps using a Neural Network </div>
+                                <div class="experiment-title">An app that tracks your steps using a<br>Neural Network </div>
                             </div>
                             <div class="experiment-number-area">&nbsp;</div>
                         </a>
@@ -747,39 +764,64 @@
                     <div class="contact-info">
                         <h3 class="h4 about-me-title">About Me.</h3>
                         <h4 class="h5 about-me-subtitle">Designer. Developer</h4>
-                        <p class="about-me-text">I'm Ayush Aggarwal, a 20-year-old <strong>designer and developer</strong>. I'm a weird guy who likes making weird things with technologies.
+                        <p class="about-me-text">I'm Ayush Aggarwal, <strong>designer and developer</strong>. I simply like to make things that no one else dares to.
                             <br>I like to <strong>resolve</strong> design problems, <strong>create</strong> smart user interface and <strong>imagine</strong> useful interaction.
-                            <br> When not working, I usually just <strong>sleep</strong>.</p>
-<!--
+                            <br> When not working, I usually just <strong>play games</strong>.</p>
                         <ul class="about-me-list">
                             <li class="react">
-                                <div class="about-me-list-label">React.js</div>
+                                <div class="about-me-list-label"><br>Unreal Engine</div>
+<!--
                                 <svg viewBox="0 0 128 128">
                                     <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3-12.5 4.8-19.3 11.4-19.3 18.8s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zm-14.8-30.5c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zm-11.2 59.3c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zm-25.6 27.1c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zm25.6-27.1c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zm-54.5-16.2c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zm-24.7 29c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5-13.8-4-22.1-10-22.1-15.6zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zm60.8-20.3c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path>
                                 </svg>
+-->
+                                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" style="enable-background:new 0 0 48 48;" xml:space="preserve" width="48" height="48">
+                                    <circle style="fill:none;stroke:#000;stroke-width:2;stroke-miterlimit:10;" cx="24" cy="24" r="19"/>
+                                    <path style="fill:#000;" d="M9,28c0-7.708,7.222-15.387,14-17c0,0-3,2.375-3,4c0,3.252,2,2,2,2s0,12.161,0,13s0.9,1,2,1
+	s3-1.341,3-1.341S27,20.152,27,19s-1.367-2.458-2-3c1.693,0,3,1,3,1s1.287-2.502,7-4c-0.868,1.105-2.968,4.061-2.968,5.057
+	c0,0.997-0.032,10.737-0.032,11.314C32,29.948,32.681,30,33.101,30S35.83,29.395,38,27c0,0.728-3.614,6.16-8,9l-3-3l-3,4
+	c0,0-6.139-0.735-9-5c0.772,0.115,2,0.206,2-1c0-1.205,0-9.214,0-10s-0.367-1.152-1.048-1.152C15.271,19.849,12.686,21.493,9,28z"/>
+                                </svg>
                             </li>
                             <li class="uiux">
-                                <div class="about-me-list-label">UI/UX</div>
+                                <div class="about-me-list-label">Swift / Metal</div>
+<!--
                                 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
                                     <path d="M74.6 96.7c1 0 1.9-.8 1.9-1.9s-.9-1.8-1.9-1.8H50.4c-1 0-1.9.8-1.9 1.9s.8 1.9 1.9 1.9h24.2zM83.9 100.4H41.1c-1 0-1.9.8-1.9 1.9s.8 1.9 1.9 1.9H84c1 0 1.9-.8 1.9-1.9s-.9-1.9-2-1.9zM20.6 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7 3.7 1.7 3.7 3.7-1.7 3.7-3.7 3.7zM37.3 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7c2.1 0 3.7 1.7 3.7 3.7S39.4 24 37.3 24zM54.1 12.8c-4.1 0-7.5 3.3-7.5 7.5s3.3 7.5 7.5 7.5 7.5-3.3 7.5-7.5-3.4-7.5-7.5-7.5zm0 11.2c-2.1 0-3.7-1.7-3.7-3.7s1.7-3.7 3.7-3.7c2.1 0 3.7 1.7 3.7 3.7S56.2 24 54.1 24z"></path>
                                     <path d="M7.5 7.2V119h111.8V7.2H7.5zm3.7 3.8h104.4v18.6H11.2V11zm104.4 104.3H11.2v-82h104.4v82z"></path>
                                     <path d="M47.5 81.4l1.7 1.4c.1 0 .1.1.2.1.4.3.7.5 1.1.7.2.1.5.3.7.4.4.2.7.4 1.1.6.3.2.6.3.9.5.3.1.6.3.9.4.6.3 1.3.5 1.9.7.2.1.5.1.7.2.5.1 1 .3 1.5.4.3.1.5.1.8.2.5.1 1 .2 1.5.2.2 0 .5.1.7.1.7.1 1.5.1 2.2.1s1.5 0 2.2-.1c.2 0 .5-.1.7-.1.5-.1 1-.1 1.5-.2.3 0 .5-.1.8-.1.5-.1 1-.2 1.5-.4.2-.1.4-.1.7-.2.6-.2 1.3-.4 1.9-.7.3-.1.6-.3.9-.4.3-.2.7-.3 1-.5.4-.2.7-.4 1-.6.2-.1.5-.3.7-.4.4-.2.7-.5 1.1-.7.1 0 .1-.1.2-.1l1.9-1.4-.1-.1c5.1-4.4 8.3-10.9 8.3-18.2C87.7 49.8 76.8 39 63.5 39S39.2 49.8 39.2 63.1c0 7.3 3.2 13.8 8.3 18.3zM58.4 83c-.7-.2-1.5-.4-2.2-.7-.1 0-.2-.1-.2-.1-.7-.3-1.5-.6-2.2-1l4.5-2.5c1.4-.8 2.3-2.2 2.3-3.8v-3.1l-.4-.5s-1.5-1.8-2.1-4.3l-.2-.9-.6-.4.1-2.8.6-.6v-4.9c0-.1-.1-1.4.8-2.5.9-1 2.5-1.5 4.8-1.5s3.9.5 4.8 1.5c1 1.1.8 2.4.8 2.5v4.1l.1.9.6.6v2.7c0 .1-.1.1-.1.1l-.9.3-.3.9c-.4 1.3-1 2.5-1.8 3.5-.2.2-.3.5-.5.6l-.5.5V75c0 1.6.9 3.1 2.4 3.9l4.8 2.4h-.1c-.7.3-1.3.6-2 .9-.1 0-.2.1-.3.1-.7.3-1.4.5-2.2.7-3.4.8-6.7.8-10 0 .1 0 0 0 0 0zm5-40.4c11.3 0 20.5 9.2 20.5 20.5 0 6.4-2.9 12.1-7.5 15.8-.1-.1-.2-.1-.3-.2l-6.5-3.2c-.2-.1-.3-.3-.3-.5v-1.9c.1-.1.2-.2.3-.4.8-1.1 1.5-2.4 2-3.8 1.1-.7 1.8-1.9 1.8-3.3v-2.7c0-.8-.2-1.5-.7-2.2v-3.1c.1-.7.1-3.1-1.7-5.2-1.6-1.8-4.2-2.8-7.6-2.8s-6 .9-7.6 2.8C54 54.5 54 57 54.1 57.6v3.1c-.4.6-.7 1.4-.7 2.2v2.7c0 1 .4 2 1.1 2.7.6 2.1 1.6 3.8 2.2 4.6V75c0 .2-.1.4-.3.5l-6 3.3c-.1 0-.1.1-.2.1-4.5-3.8-7.4-9.4-7.4-15.8.1-11.3 9.3-20.5 20.6-20.5z"></path>
                                 </svg>
+-->
+                                <svg width="40px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 36" version="1.1" height="36px">
+                                    <defs>
+                                        <linearGradient id="a" x2="50%" x1="50%" y2="100%">
+                                            <stop stop-color="#F88A36" offset="0"/>
+                                            <stop stop-color="#FD2020" offset="1"/>
+                                        </linearGradient>
+                                    </defs>
+                                    <path d="m29.885 33.047c-4.667 2.696-11.084 2.973-17.54 0.206-5.2273-2.224-9.5646-6.117-12.345-10.565 1.3346 1.112 2.8916 2.002 4.5598 2.78 6.6672 3.125 13.333 2.911 18.024 0.008-0.003-0.003-0.005-0.005-0.007-0.008-6.673-5.116-12.345-11.789-16.571-17.238-0.8901-0.8898-1.5574-2.002-2.2247-3.0029 5.1159 4.671 13.235 10.565 16.126 12.234-6.116-6.451-11.566-14.458-11.344-14.236 9.676 9.787 18.685 15.348 18.685 15.348 0.298 0.168 0.528 0.308 0.713 0.433 0.195-0.496 0.366-1.011 0.51-1.545 1.557-5.672-0.222-12.123-4.115-17.461 9.008 5.4495 14.347 15.681 12.122 24.245-0.058 0.231-0.121 0.459-0.189 0.683 0.026 0.031 0.052 0.063 0.078 0.096 4.448 5.561 3.225 11.455 2.669 10.343-2.413-4.722-6.88-3.278-9.151-2.32z" fill="url(#a)"/>
+                                </svg>
                             </li>
                             <li class="css-code">
-                                <div class="about-me-list-label">is Fun.</div>
+                                <div class="about-me-list-label">Visual C++ 17</div>
+<!--
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                                     <path fill="#444" d="M16.017 21.044zM4.743 3.519L6.792 26.5l9.194 2.552 9.22-2.556 2.051-22.977H4.743zM23 8.775l-.693 7.767-.48 5.359-.042.476-5.781 1.603-5.773-1.603-.395-4.426h2.829l.201 2.248 3.142.847.008-.002h.002l3.134-.846.329-3.655h-6.579l-.056-.633-.129-1.429-.067-.756h7.081l.258-2.886H9.203l-.056-.634-.129-1.429-.067-.756h14.118l-.068.756z"></path>
                                 </svg>
+-->
+                                <svg enable-background="new 0 0 512 512" id="Layer_1" version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                    <g>
+                                        <path d="M175.2,289.1c-7.1,5.4-14.2,10.7-21.2,16.1c-37.9,28.9-75.7,57.7-113.6,86.6c-2.1,1.6-3.7,2-6.2,0.7   c-7.6-4.1-15.5-7.7-23.1-11.9c-1.6-0.9-3.1-3.5-3.1-5.3c-0.1-79-0.1-158,0-237c0-1.8,1.6-4.3,3.2-5.2c7.3-4,14.9-7.5,22.2-11.4   c3-1.6,5.1-1.4,7.9,0.7c44.6,34.1,89.2,68,134.3,102.4c7.7-7.4,15.3-14.7,22.9-22.1c57.9-56.5,115.8-113,173.8-169.5   c8.7-8.5,17.6-16.8,26.2-25.4c2.5-2.5,4.6-3,7.8-1.7c28.5,11.6,57.1,23,85.7,34.5c2.5,1,4.9,2.3,7.4,2.9c5.2,1.2,6.7,4.1,6.7,9.5   c-0.2,136.1-0.1,272.3,0,408.4c0,4.5-1.1,6.6-5.5,8.3c-31.6,12.4-63.1,25.1-94.6,37.8c-2.9,1.2-4.6,0.9-6.9-1.3   C335.6,444.4,272,382.7,208.5,321c-10-9.7-20.1-19.5-30.1-29.2C177.5,291,176.5,290.2,175.2,289.1z M256.7,256.5   c43,32.4,85.2,64.2,127.9,96.3c0-64.4,0-127.8,0-191.9C341.8,192.9,299.5,224.5,256.7,256.5z M116.7,256.6   c-21.4-19.1-42.4-37.9-64.2-57.3c0,38.9,0,76.5,0,115.5C74.3,295,95.3,276,116.7,256.6z"/>
+                                    </g>
+                                </svg>
                             </li>
                             <li class="fun">
-                                <div class="about-me-list-label">Semicolons.</div>
+                                <div class="about-me-list-label">WebGL / JS</div>
                                 <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                                     <path fill="#444" d="M.384.67v31.296H31.68V.67H.384zm16.334 26.772c-.461.937-1.342 1.553-2.362 1.85-1.568.36-3.067.155-4.183-.515-.747-.458-1.33-1.163-1.725-1.975.794-.485 1.586-.973 2.38-1.458.021.009.083.122.167.268.303.509.565.869 1.08 1.121.506.172 1.615.283 2.044-.607.262-.452.178-1.936.178-3.545 0-2.529.012-5.016.012-7.576h2.927c0 2.688.015 5.383 0 8.067.006 1.645.149 3.14-.518 4.369zm12.144-.827c-1.017 3.481-6.691 3.594-8.957 1.294-.479-.541-.779-.824-1.065-1.449 1.205-.693 1.205-.693 2.377-1.371.637.979 1.226 1.517 2.285 1.737 1.437.175 2.883-.318 2.559-1.844-.333-1.247-2.942-1.55-4.718-2.883-1.803-1.211-2.225-4.153-.744-5.834.494-.622 1.336-1.086 2.219-1.309l.922-.119c1.77-.036 2.877.431 3.689 1.339.226.229.41.476.756 1.012-.943.601-.94.595-2.291 1.47-.289-.622-.767-1.012-1.273-1.181-.785-.238-1.776.021-1.981.851-.071.256-.056.494.057.916.318.726 1.386 1.041 2.344 1.481 2.758 1.119 3.689 2.317 3.918 3.745.22 1.229-.054 2.026-.095 2.145z"></path>
                                 </svg>
                             </li>
                         </ul>
--->
                     </div>
                 </div>
             </div>

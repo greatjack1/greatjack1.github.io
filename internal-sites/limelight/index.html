@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+    <title>Ayush Aggarwal - Designer. Developer.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: black !important;
+        }
+        body.loaded {
+            background-color: black; !important;
+        }
+        #page-wrap {
+            opacity: 0;
+        }
+        .loaded #page-wrap {
+            opacity: 1;
+        }
+        @-webkit-keyframes "stripe" {
+            0% {
+                left: 0;
+                width: 0px;
+            }
+            25% {
+                left: 0;
+                width: 100%;
+            }
+            50% {
+                left: 100%;
+                width: 0px;
+            }
+            75% {
+                left: 0;
+                width: 100%;
+            }
+            100% {
+                left: 0;
+                width: 0px;
+            }
+        }
+        @keyframes "stripe" {
+            0% {
+                left: 0;
+                width: 0px;
+            }
+            25% {
+                left: 0;
+                width: 100%;
+            }
+            50% {
+                left: 100%;
+                width: 0px;
+            }
+            75% {
+                left: 0;
+                width: 100%;
+            }
+            100% {
+                left: 0;
+                width: 0px;
+            }
+        }
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #252a60;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.7s, visibility 0.7s, z-index 0.7s;
+            z-index: 61
+        }
+        #loader.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            z-index: -1
+        }
+        .no-js #loader {
+            display: none
+        }
+        .loader-content {
+            position: absolute;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 90px;
+            overflow: hidden;
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.25s ease;
+            z-index: 70
+        }
+        .loader-content.is-hidden {
+            opacity: 0;
+            visibility: hidden
+        }
+        .loader-content > * {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+        .stripe-loader {
+            width: 100%;
+            height: 90px
+        }
+        .stripe {
+            height: 30px;
+            width: 0;
+            background: #ffffff;
+            position: relative;
+            margin: 0
+        }
+        .stripe:first-child {
+            -webkit-animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) infinite;
+            animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) infinite
+        }
+        .stripe:nth-child(2) {
+            -webkit-animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.1s infinite;
+            animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.1s infinite
+        }
+        .stripe:nth-child(3) {
+            -webkit-animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s infinite;
+            animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s infinite
+        }
+        #loader-after {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #1c1d25;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.7s, visibility 0.7s, z-index 0.7s;
+            z-index: 62
+        }
+        #loader-after.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            z-index: -1
+        }
+        .hero-single-work-title {
+            line-height: 70px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/application.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Ayush Aggarwal - Interactive Frontend Developer - Cerasa">
+    <meta name="theme-color" content="#191a21">
+    
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" class="loaded">
+    <div id="loader" class="is-hidden">
+        <div class="loader-content is-hidden">
+            <div class="stripe-loader">
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+            </div>
+        </div>
+    </div>
+    <div id="loader-after" class="is-hidden" style="transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0);"></div>
+    <div id="page-transition">
+        <div class="page-transition-content">
+            <div class="stripe-loader">
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+            </div>
+        </div>
+    </div>
+    <div id="page-transition-after"></div>
+    <div id="page-wrap">
+        <nav itemscope="" itemtype="http://schema.org/SiteNavigationElement" class="main-navigation is-loaded">
+            <div class="content nav-content">
+                <a href="http://highestage.github.io/" data-destination="home" itemprop="url" class="nav-logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" id="my-svg" width="256" height="256" viewBox="0 0 256 256">
+                        <path fill="#FFF" d="M53.2 145.1l81.9-71.7h-34.3L19 145.1l102.8 90h34.3l-102.9-90"></path>
+                        <g fill="#FFF">
+                            <path d="M145.3 145.1l36-31.6s.8-.7 1.1-1l2.4-2.4c8.5-10.3 13.3-23.3 13.3-36.7 0-31.8-25.8-57.7-57.6-57.7l-111.1.1L7.2 38.6l111.4-.1h21.9c19.2 0 34.8 15.6 34.8 34.8 0 8.2-2.7 15.8-8 22.2-1 1.3-8.3 7.3-8.3 7.3l-12.4 10.6-35.6 31.7 102.9 90h34.3l-102.9-90zm33.4-31.7h.2-.2z"></path>
+                            <path d="M252.8 236.9h-39.6l-.5-.4-104.4-91.3 37.1-33 12.5-10.6c3.5-2.9 7.5-6.3 8.1-7 5-6 7.6-13.3 7.6-21.1 0-18.2-14.8-33.1-33.1-33.1H3L28.6 14h115.8l-.1.1c31 2 55.6 27.8 55.6 59.3 0 13.6-4.9 27.1-13.7 37.8-.5.6-2.2 2.3-2.6 2.6-.3.3-1.2 1-1.2 1l-.5.4-34 29.8 104.9 91.9zm-38.3-3.5h29l-100.9-88.3 34.1-29.9h-2.2l3.6-3.5h1v1.5l1.6-1.4c.2-.2.4-.4.6-.5.4-.3 1.9-1.9 2.2-2.2 8.3-10.1 12.9-22.8 12.9-35.6 0-30.8-25.1-55.9-55.9-55.9h-3.9l-106.5-.1-18.8 19.4 109-.1h20.1c20.2 0 36.6 16.4 36.6 36.6 0 8.6-2.9 16.6-8.4 23.3-1 1.3-7.3 6.5-8.5 7.5l-12.4 10.6-34.1 30.3 100.9 88.3z"></path>
+                            <g>
+                                <path d="M249.3 235.5h-35.5l-.1-.1-103.2-90.3.3-.3 35.6-31.7 12.4-10.6c2.5-2.1 7.5-6.2 8.3-7.2 5.1-6.2 7.9-13.8 7.9-21.9 0-19-15.4-34.4-34.4-34.4H6.2l23-23.7h.2l112.1-.1c31.6.5 57.1 26.4 57.1 58.1 0 13.3-4.8 26.5-13.4 37-.4.5-2.1 2.2-2.4 2.5-.3.3-1.1 1-1.1 1l-.1.1-35.5 31.2 103.2 90.4zm-35.3-.8h33l-102.4-89.6 36.4-32c.2-.2.7-.6 1-.9.3-.3 2-1.9 2.4-2.4 8.5-10.3 13.2-23.3 13.2-36.4 0-31.5-25.7-57.2-57.2-57.3h-1l-110 .1L8 38.2l111-.1h21.5c19.4 0 35.2 15.8 35.2 35.2 0 8.3-2.8 16-8 22.4-1 1.3-8.1 7.1-8.4 7.3l-12.4 10.6-35.2 31.4L214 234.7zm-35-120.9h-1.4l1-.8h.4V113.8z"></path>
+                                <path d="M253.9 237.3H213l-.5-.4-104.8-91.7 1.8-1.6 35.6-31.7 12.5-10.6c4-3.3 7.5-6.4 8-7 4.9-5.9 7.5-13.1 7.5-20.8 0-18-14.7-32.7-32.7-32.7H2l26.4-27.2 117.2-.1-.2.2c30.6 2.6 54.8 28.5 54.8 59.6 0 13.7-4.9 27.3-13.8 38.1-.5.6-2.3 2.4-2.6 2.7-.3.3-1.2 1-1.2 1l-.5.4-33.6 29.5 105.4 92.3zm-39.2-4.3h27.7L142 145.1l33.6-29.5h-3.1l4.7-3.8.1-2.6 1.8 2 1.4.1c.2-.1.3-.3.4-.4.4-.3 1.9-1.9 2.2-2.2 8.3-10 12.8-22.6 12.8-35.3 0-30.6-24.9-55.5-55.5-55.5H30.3l-18 18.5 108.4-.1h19.7c20.4 0 37 16.6 37 37 0 8.7-2.9 16.8-8.4 23.5-.7.9-3.5 3.4-8.5 7.5L148 115.1l-33.7 30L214.7 233z"></path>
+                            </g>
+                        </g>
+                    </svg><span itemprop="name" class="visual-hide">Home</span><span aria-label="Ayush Aggarwal&#39;s Logo">Ayush Aggarwal's Logo</span>
+                </a>
+            </div>
+        </nav>
+        <nav class="mobile-menu"><span aria-label="Close" class="close-trigger"><i class="close-trigger-bar left"></i><i class="close-trigger-bar right"></i></span>
+        </nav>
+        <div id="single-work" itemscope="" itemtype="http://schema.org/CreativeWork" class="cerasa">
+            <header style="background-image: url(assets/limelight-banner.jpg);" id="top" class="hero-single-work">
+                <div class="hero-single-work-content">
+                    <div class="text-loading-mask">
+                        <div class="text-loading-overlay is-reveal"></div>
+                        <h1 itemprop="name" class="hero-single-work-title">LimeLight Photo Editor</h1>
+                    </div>
+                    <div class="text-loading-mask">
+                        <div class="text-loading-overlay is-reveal"></div>
+                        <h3 class="hero-single-work-subtitle">A 3MB Photo Editor for all the serious work.</h3>
+                    </div>
+                </div>
+                <div class="hero-single-context-stripe">
+                    <div class="content">
+                        <ul class="context-stripe-focus-area is-loaded">
+                            <li><strong>Role</strong> <span class="stripe-baffle">Designer and Developer</span>
+                            </li>
+                            <li><strong>Context</strong> <span class="stripe-baffle">Lightroom&copy; Competitor</span>
+                            </li>
+                            <li><strong>Period</strong> <span class="stripe-baffle">Middle 2014</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main class="single-work">
+                <section class="single-work-intro-section">
+                    <div class="content">
+                        <h2 class="single-work-intro-title is-hidden"><span data-letters="The Project">The Project</span></h2>
+                        <div class="single-work-intro-text single-work-anim-text is-hidden">
+                            <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                        <div class="button-content single-work-anim-text is-hidden"><a href="http://highestage.github.io" target="_blank" rel="noopener" class="the-button ghost no-smoothState"><span class="button-text">Visit Website</span><span class="button-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 476.213 476.213"><path d="M405.606 167.5l-21.212 21.213 34.393 34.393H0v30h418.787L384.394 287.5l21.212 21.213 70.607-70.607"></path></svg></span></a>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="works-index-close the-button shadow"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span>Close</div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery.min.js"><\\/script>');
+    </script>
+    <script src="js/application.js"></script>
+</body>
+
+</html>

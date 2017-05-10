@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+    <title>Ayush Aggarwal - Designer. Developer.</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            background-color: black !important;
+        }
+        body.loaded {
+            background-color: black; !important;
+        }
+        #page-wrap {
+            opacity: 0;
+        }
+        .loaded #page-wrap {
+            opacity: 1;
+        }
+        @-webkit-keyframes "stripe" {
+            0% {
+                left: 0;
+                width: 0px;
+            }
+            25% {
+                left: 0;
+                width: 100%;
+            }
+            50% {
+                left: 100%;
+                width: 0px;
+            }
+            75% {
+                left: 0;
+                width: 100%;
+            }
+            100% {
+                left: 0;
+                width: 0px;
+            }
+        }
+        @keyframes "stripe" {
+            0% {
+                left: 0;
+                width: 0px;
+            }
+            25% {
+                left: 0;
+                width: 100%;
+            }
+            50% {
+                left: 100%;
+                width: 0px;
+            }
+            75% {
+                left: 0;
+                width: 100%;
+            }
+            100% {
+                left: 0;
+                width: 0px;
+            }
+        }
+        #loader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #252a60;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.7s, visibility 0.7s, z-index 0.7s;
+            z-index: 61
+        }
+        #loader.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            z-index: -1
+        }
+        .no-js #loader {
+            display: none
+        }
+        .loader-content {
+            position: absolute;
+            -webkit-transform-style: preserve-3d;
+            transform-style: preserve-3d;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 300px;
+            height: 90px;
+            overflow: hidden;
+            opacity: 1;
+            visibility: visible;
+            transition: all 0.25s ease;
+            z-index: 70
+        }
+        .loader-content.is-hidden {
+            opacity: 0;
+            visibility: hidden
+        }
+        .loader-content > * {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0
+        }
+        .stripe-loader {
+            width: 100%;
+            height: 90px
+        }
+        .stripe {
+            height: 30px;
+            width: 0;
+            background: #ffffff;
+            position: relative;
+            margin: 0
+        }
+        .stripe:first-child {
+            -webkit-animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) infinite;
+            animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) infinite
+        }
+        .stripe:nth-child(2) {
+            -webkit-animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.1s infinite;
+            animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.1s infinite
+        }
+        .stripe:nth-child(3) {
+            -webkit-animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s infinite;
+            animation: stripe 1.5s cubic-bezier(0.694, 0.048, 0.335, 1) 0.2s infinite
+        }
+        #loader-after {
+            position: fixed;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background-color: #1c1d25;
+            opacity: 1;
+            visibility: visible;
+            transition: opacity 0.7s, visibility 0.7s, z-index 0.7s;
+            z-index: 62
+        }
+        #loader-after.is-hidden {
+            opacity: 0;
+            visibility: hidden;
+            z-index: -1
+        }
+        .hero-single-work-title {
+            line-height: 70px;
+        }
+    </style>
+    <link rel="stylesheet" href="css/application.css">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#191a21">
+    
+</head>
+
+<body itemscope="" itemtype="http://schema.org/WebPage" class="loaded">
+    <div id="loader" class="is-hidden">
+        <div class="loader-content is-hidden">
+            <div class="stripe-loader">
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+            </div>
+        </div>
+    </div>
+    <div id="loader-after" class="is-hidden" style="transform: translate(100%, 0%) matrix(1, 0, 0, 1, 0, 0);"></div>
+    <div id="page-transition">
+        <div class="page-transition-content">
+            <div class="stripe-loader">
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+                <div class="stripe"></div>
+            </div>
+        </div>
+    </div>
+    <div id="page-transition-after"></div>
+    <div id="page-wrap">
+        <nav class="mobile-menu"><span aria-label="Close" class="close-trigger"><i class="close-trigger-bar left"></i><i class="close-trigger-bar right"></i></span>
+        </nav>
+        <div id="single-work" itemscope="" itemtype="http://schema.org/CreativeWork" class="cerasa">
+            <header style="background-image: url(assets/venturix-banner.png);" id="top" class="hero-single-work">
+                <div class="hero-single-work-content">
+                    <div class="text-loading-mask">
+                        <div class="text-loading-overlay is-reveal"></div>
+                        <h1 itemprop="name" class="hero-single-work-title">Venturix</h1>
+                    </div>
+                    <div class="text-loading-mask">
+                        <div class="text-loading-overlay is-reveal"></div>
+                        <h3 class="hero-single-work-subtitle">A Role Playing Game built using Unreal Engine 4</h3>
+                    </div>
+                </div>
+                <div class="hero-single-context-stripe">
+                    <div class="content">
+                        <ul class="context-stripe-focus-area is-loaded">
+                            <li><strong>Role</strong> <span class="stripe-baffle">Designer and Developer</span>
+                            </li>
+                            <li><strong>Context</strong> <span class="stripe-baffle">Neural Net enabled AI response system</span>
+                            </li>
+                            <li><strong>Completed</strong> <span class="stripe-baffle">Early 2017</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <main class="single-work">
+                <section class="single-work-intro-section">
+                    <div class="content">
+                        <h2 class="single-work-intro-title is-hidden"><span data-letters="The Project">The Project</span></h2>
+                        <div class="single-work-intro-text single-work-anim-text is-hidden">
+                            <p itemprop="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <div class="works-index-close the-button shadow"><span><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"></path></svg></span>Close</div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/jquery.min.js"><\\/script>');
+    </script>
+    <script src="js/application.js"></script>
+</body>
+
+</html>
